@@ -5,7 +5,7 @@
 #define TABLE_SIZE 10
 
 typedef struct Student {
-    int key;
+    int value;
     char student_id[12];
     struct Student* next;
 } Student;
@@ -39,7 +39,7 @@ void insert_student(char* data) {
 
     Student* new_student = (Student*)malloc(sizeof(Student));
 
-    new_student->key = index;
+    new_student->value = index;
     strcpy(new_student->student_id, data);
 
     new_student->next = NULL;
