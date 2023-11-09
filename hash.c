@@ -59,7 +59,7 @@ void print_table() {                    //Hash бүтцийн элемнтүүд
         if (hash_table[i] != NULL) {    //Bucket Хоосон биш үед
             Student* current = hash_table[i];
 
-            printf("Slot %d:\t", i);
+            printf("%d:\t", i);
 
             while (current != NULL) {   //Bucket доторх элемент дуусах хүртэл
                 printf("%s\t", current->student_id);
